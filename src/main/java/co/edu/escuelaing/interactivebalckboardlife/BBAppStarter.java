@@ -11,13 +11,13 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
- * 
- * @author 
+ * Clase principal de ejecución de la applicación.
+ * @author Luis Daniel Benavides Navarro.
  */
 @SpringBootApplication
 public class BBAppStarter {
     /**
-     * 
+     * Ejecutador de Spring Boot.
      * @param args 
      */
     public static void main(String[] args){
@@ -28,8 +28,8 @@ public class BBAppStarter {
         app.run(args);
     }
     /**
-     * 
-     * @return 
+     * Genera el puerto con el cual se ejecuta la app.
+     * @return numero de puerto.
      */
     static int getPort() {
         if (System.getenv("PORT") != null) {
